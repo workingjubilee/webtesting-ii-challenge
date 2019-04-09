@@ -4,42 +4,44 @@
 // ### Count Rules
 
 class Board {
-  constructor() {
-
+  constructor(score = {}) {
+    this.hits = score.hits || 0;
+    this.strikes = score.strikes || 0;
+    this.balls = score.balls || 0;
   }
 
   cascade() {
 
   }
-}
 
-
-function addFoul(score) {
-  const update = new Board(score);
-}
-
-function addHit(score) {
-  const update = new Board(score);
-}
-
-
-function addBall(score) {
-  const update = new Board(score);
-}
-
-function addStrike(score) {
-  const update = new Board(score);
-}
-
-function reset(score) {
-  const update = new Board(score);
-  
-}
-
-function cascade(score) {
-  if (this.hits === score.hits +1) {
+  reset() {
 
   }
 }
 
-export default score;
+
+export function addFoul(score) {
+  const update = new Board(score);
+
+  return update;
+}
+
+export function addHit(score) {
+  const update = new Board(score);
+
+  return update;
+}
+
+export function addBall(score) {
+  const update = new Board(score);
+
+  return update;
+}
+
+export function addStrike(score) {
+  const update = new Board(score);
+
+  return update;
+}
+
+export default { Board };

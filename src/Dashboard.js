@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import score from './score.js'
 
 const Dashboard = props => {
-  
+  const [scoreboard, setScoreboard] = useState(new score.Board())
+
+  return null;
 }
 
 export default Dashboard;
