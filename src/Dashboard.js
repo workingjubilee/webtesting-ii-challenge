@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 import * as score from './score.js';
+import Display from './Display';
 
 const Dashboard = props => {
   const [scoreboard, setScoreboard] = useState(new score.Board());
 
-  return null;
+  return (
+    <Display strikes={scoreboard.strikes} hits={scoreboard.hits} balls={scoreboard.balls} />
+  )
 }
 
 export default Dashboard;
