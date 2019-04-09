@@ -1,10 +1,16 @@
 import * as score from './score.js';
 
-console.log(score);
-
 const baseScore = { strikes: 0, balls: 0, hits: 0 }
 
 const testScore = { strikes: 2, balls: 3, hits: 0 }
+
+it('shouldn\'t panic if nothing is passed', function() {
+  // With two strikes a foul has no effect, count stays at 2 strikes.
+
+  expect(new score.Board()).toHaveProperty('strikes');
+  expect(new score.Board()).toHaveProperty('balls');
+  expect(new score.Board()).toHaveProperty('hits');
+})
 
 it('shouldn\'t increase strikes past a certain value', function() {
   // With two strikes a foul has no effect, count stays at 2 strikes.
