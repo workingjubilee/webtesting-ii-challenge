@@ -8,9 +8,9 @@ import Dashboard from './Dashboard';
 // strike, ball, foul, hit buttons
 
 const App = props => {
-    return (
-        <Dashboard />
-    );
+  return (
+    <Dashboard />
+  );
 }
 
 export default App;

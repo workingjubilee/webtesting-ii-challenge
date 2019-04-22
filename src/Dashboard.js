@@ -5,6 +5,8 @@ import Display from './Display';
 const Dashboard = props => {
   const [scoreboard, setScoreboard] = useState(new score.Board());
 
+  
+
   return (
     <Display strikes={scoreboard.strikes} hits={scoreboard.hits} balls={scoreboard.balls} />
   )
